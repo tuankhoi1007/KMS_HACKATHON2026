@@ -1,0 +1,28 @@
+{
+  "subject": "DSA",
+  "full_name": "Data Structures & Algorithms",
+  "nodes": [
+    { "key": "big_o", "name": "Big-O Notation", "description": "Phân tích độ phức tạp thuật toán: O(1), O(n), O(log n), O(n²). Cách đánh giá hiệu năng của code.", "difficulty": "easy", "position_x": 400, "position_y": 50 },
+    { "key": "arrays", "name": "Arrays & Strings", "description": "Mảng tĩnh, mảng động, chuỗi ký tự. Kỹ thuật Two Pointers, Sliding Window.", "difficulty": "easy", "position_x": 200, "position_y": 200 },
+    { "key": "linked_lists", "name": "Linked Lists", "description": "Danh sách liên kết đơn, đôi, vòng. Thao tác chèn, xóa, đảo ngược.", "difficulty": "easy", "position_x": 600, "position_y": 200 },
+    { "key": "hash_tables", "name": "Hash Tables", "description": "Bảng băm, hàm băm, xử lý đụng độ (Chaining, Open Addressing). Ứng dụng: đếm tần suất, lookup O(1).", "difficulty": "medium", "position_x": 100, "position_y": 380 },
+    { "key": "stacks_queues", "name": "Stacks & Queues", "description": "Ngăn xếp (LIFO), Hàng đợi (FIFO). Ứng dụng: kiểm tra ngoặc, BFS, biểu thức hậu tố.", "difficulty": "medium", "position_x": 400, "position_y": 380 },
+    { "key": "sorting", "name": "Sorting Algorithms", "description": "Bubble, Selection, Insertion, Merge Sort, Quick Sort, Heap Sort. So sánh stability và complexity.", "difficulty": "medium", "position_x": 100, "position_y": 560 },
+    { "key": "binary_search", "name": "Binary Search", "description": "Tìm kiếm nhị phân trên mảng đã sắp xếp. Biến thể: lower_bound, upper_bound, search on answer.", "difficulty": "medium", "position_x": 100, "position_y": 740 },
+    { "key": "trees_graphs", "name": "Trees & Graphs", "description": "Cây nhị phân, BST, BFS, DFS, Traversal (In/Pre/Post-order). Biểu diễn đồ thị: adjacency list/matrix.", "difficulty": "hard", "position_x": 400, "position_y": 560 },
+    { "key": "dynamic_programming", "name": "Dynamic Programming", "description": "Quy hoạch động: Memoization, Tabulation. Bài toán kinh điển: Fibonacci, Knapsack, LCS, LIS.", "difficulty": "hard", "position_x": 400, "position_y": 740 },
+    { "key": "shortest_path", "name": "Shortest Path", "description": "Dijkstra, Bellman-Ford, Floyd-Warshall. Ứng dụng tìm đường đi ngắn nhất trên đồ thị có trọng số.", "difficulty": "hard", "position_x": 700, "position_y": 560 }
+  ],
+  "edges": [
+    { "source": "big_o", "target": "arrays" },
+    { "source": "big_o", "target": "linked_lists" },
+    { "source": "arrays", "target": "hash_tables" },
+    { "source": "arrays", "target": "sorting" },
+    { "source": "linked_lists", "target": "stacks_queues" },
+    { "source": "hash_tables", "target": "stacks_queues" },
+    { "source": "sorting", "target": "binary_search" },
+    { "source": "stacks_queues", "target": "trees_graphs" },
+    { "source": "trees_graphs", "target": "dynamic_programming" },
+    { "source": "trees_graphs", "target": "shortest_path" }
+  ]
+}

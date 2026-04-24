@@ -1,0 +1,28 @@
+{
+  "subject": "HDH",
+  "full_name": "He Dieu Hanh (Operating Systems)",
+  "nodes": [
+    { "key": "os_concepts", "name": "OS Concepts", "description": "Khái niệm hệ điều hành, vai trò trung gian giữa phần cứng và người dùng. User mode vs Kernel mode, System Calls.", "difficulty": "easy", "position_x": 400, "position_y": 50 },
+    { "key": "process_thread", "name": "Process & Thread", "description": "Tiến trình, luồng, PCB, trạng thái tiến trình (Ready/Running/Blocked). Context Switch, fork(), exec().", "difficulty": "easy", "position_x": 200, "position_y": 200 },
+    { "key": "cpu_scheduling", "name": "CPU Scheduling", "description": "FCFS, SJF, Round Robin, Priority Scheduling, Multilevel Queue. Preemptive vs Non-preemptive.", "difficulty": "medium", "position_x": 100, "position_y": 380 },
+    { "key": "synchronization", "name": "Synchronization", "description": "Race Condition, Critical Section, Mutex, Semaphore, Monitor. Producer-Consumer, Readers-Writers.", "difficulty": "medium", "position_x": 350, "position_y": 380 },
+    { "key": "deadlock", "name": "Deadlock", "description": "4 điều kiện Deadlock, Banker's Algorithm, Detection & Recovery. Resource Allocation Graph.", "difficulty": "hard", "position_x": 350, "position_y": 560 },
+    { "key": "memory_mgmt", "name": "Memory Management", "description": "Quản lý bộ nhớ: Contiguous, Partitioning, Fragmentation (Internal/External). Base & Limit registers.", "difficulty": "medium", "position_x": 650, "position_y": 200 },
+    { "key": "paging", "name": "Paging & Segmentation", "description": "Phân trang, phân đoạn, Page Table, Page Fault. So sánh Paging vs Segmentation.", "difficulty": "hard", "position_x": 550, "position_y": 380 },
+    { "key": "virtual_memory", "name": "Virtual Memory & TLB", "description": "Bộ nhớ ảo, Demand Paging, Page Replacement (FIFO/LRU/Optimal), Thrashing, TLB.", "difficulty": "hard", "position_x": 700, "position_y": 560 },
+    { "key": "file_systems", "name": "File Systems", "description": "Tổ chức file, directory, FAT, inode, NTFS. File Allocation: Contiguous, Linked, Indexed.", "difficulty": "medium", "position_x": 200, "position_y": 560 },
+    { "key": "io_systems", "name": "I/O Systems", "description": "I/O Hardware, Polling, Interrupts, DMA. Disk Scheduling: FCFS, SSTF, SCAN, C-SCAN.", "difficulty": "hard", "position_x": 200, "position_y": 740 }
+  ],
+  "edges": [
+    { "source": "os_concepts", "target": "process_thread" },
+    { "source": "os_concepts", "target": "memory_mgmt" },
+    { "source": "process_thread", "target": "cpu_scheduling" },
+    { "source": "process_thread", "target": "synchronization" },
+    { "source": "synchronization", "target": "deadlock" },
+    { "source": "memory_mgmt", "target": "paging" },
+    { "source": "paging", "target": "virtual_memory" },
+    { "source": "process_thread", "target": "file_systems" },
+    { "source": "file_systems", "target": "io_systems" },
+    { "source": "deadlock", "target": "io_systems" }
+  ]
+}

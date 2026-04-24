@@ -1,0 +1,141 @@
+[1mdiff --cc backend/requirements.txt[m
+[1mindex 1b5a0f8,bda9738..0000000[m
+[1m--- a/backend/requirements.txt[m
+[1m+++ b/backend/requirements.txt[m
+[1mdiff --git a/frontend/app/knowledge-graph/page.tsx b/frontend/app/knowledge-graph/page.tsx[m
+[1mindex 28fa507..f5617bf 100644[m
+[1m--- a/frontend/app/knowledge-graph/page.tsx[m
+[1m+++ b/frontend/app/knowledge-graph/page.tsx[m
+[36m@@ -42,7 +42,7 @@[m [mexport default function KnowledgeGraphPage() {[m
+       [m
+       {/* Header Section */}[m
+       <div className="bg-white rounded-4xl p-8 text-slate-800 relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white">[m
+[31m-        <div className="absolute right-[-50px] top-[-50px] opacity-5 pointer-events-none">[m
+[32m+[m[32m        <div className="absolute -right-12.5 top-[-50px] opacity-5 pointer-events-none">[m
+           <Network className="w-64 h-64 text-blue-600" />[m
+         </div>[m
+         [m
+[1mdiff --git a/frontend/package-lock.json b/frontend/package-lock.json[m
+[1mindex 5576add..589f7bc 100644[m
+[1m--- a/frontend/package-lock.json[m
+[1m+++ b/frontend/package-lock.json[m
+[36m@@ -125,9 +125,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -144,9 +141,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -163,9 +157,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -182,9 +173,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -533,9 +521,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -552,9 +537,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -571,9 +553,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -590,9 +569,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MIT",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -1785,9 +1761,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MPL-2.0",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -1808,9 +1781,6 @@[m
+       "cpu": [[m
+         "arm64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MPL-2.0",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -1831,9 +1801,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "glibc"[m
+[31m-      ],[m
+       "license": "MPL-2.0",[m
+       "optional": true,[m
+       "os": [[m
+[36m@@ -1854,9 +1821,6 @@[m
+       "cpu": [[m
+         "x64"[m
+       ],[m
+[31m-      "libc": [[m
+[31m-        "musl"[m
+[31m-      ],[m
+       "license": "MPL-2.0",[m
+       "optional": true,[m
+       "os": [[m

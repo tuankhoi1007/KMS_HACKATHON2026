@@ -1,0 +1,29 @@
+{
+  "subject": "LTNC",
+  "full_name": "Lap Trinh Nang Cao (C++)",
+  "nodes": [
+    { "key": "variables", "name": "Variables & Data Types", "description": "Kiểu dữ liệu cơ bản (int, float, char, bool), biến, hằng số, ép kiểu. Input/Output cơ bản.", "difficulty": "easy", "position_x": 400, "position_y": 50 },
+    { "key": "pointers", "name": "Pointers & References", "description": "Con trỏ, tham chiếu, toán tử & và *. Sự khác biệt giữa pass-by-value và pass-by-reference.", "difficulty": "medium", "position_x": 200, "position_y": 200 },
+    { "key": "memory", "name": "Memory Allocation", "description": "Cấp phát động: new/delete, malloc/free. Memory Leak, Dangling Pointer, Segmentation Fault.", "difficulty": "medium", "position_x": 200, "position_y": 380 },
+    { "key": "oop_basics", "name": "OOP Basics", "description": "Class vs Struct, Constructor/Destructor, Access Modifiers (public/private/protected), this pointer.", "difficulty": "medium", "position_x": 600, "position_y": 200 },
+    { "key": "inheritance", "name": "Inheritance & Polymorphism", "description": "Kế thừa đơn/đa, đa hình, virtual functions, pure virtual, abstract class.", "difficulty": "hard", "position_x": 500, "position_y": 380 },
+    { "key": "operator_overload", "name": "Operator Overloading", "description": "Nạp chồng toán tử (+, -, <<, >>), friend functions, quy tắc Rule of Three/Five.", "difficulty": "hard", "position_x": 750, "position_y": 380 },
+    { "key": "templates", "name": "Templates", "description": "Function templates, Class templates, Template specialization. Compile-time polymorphism.", "difficulty": "hard", "position_x": 200, "position_y": 560 },
+    { "key": "stl", "name": "STL Containers", "description": "vector, map, set, unordered_map, stack, queue, deque. Iterators và thuật toán STL.", "difficulty": "hard", "position_x": 400, "position_y": 560 },
+    { "key": "smart_pointers", "name": "Smart Pointers", "description": "unique_ptr, shared_ptr, weak_ptr. RAII pattern, tránh memory leak tự động.", "difficulty": "hard", "position_x": 200, "position_y": 740 },
+    { "key": "lambda", "name": "Lambda & Move Semantics", "description": "Lambda expressions, capture clause [=]/[&]. Rvalue reference (&&), std::move, Move Constructor.", "difficulty": "hard", "position_x": 400, "position_y": 740 }
+  ],
+  "edges": [
+    { "source": "variables", "target": "pointers" },
+    { "source": "variables", "target": "oop_basics" },
+    { "source": "pointers", "target": "memory" },
+    { "source": "oop_basics", "target": "inheritance" },
+    { "source": "oop_basics", "target": "operator_overload" },
+    { "source": "memory", "target": "templates" },
+    { "source": "inheritance", "target": "stl" },
+    { "source": "templates", "target": "stl" },
+    { "source": "memory", "target": "smart_pointers" },
+    { "source": "stl", "target": "lambda" },
+    { "source": "smart_pointers", "target": "lambda" }
+  ]
+}
