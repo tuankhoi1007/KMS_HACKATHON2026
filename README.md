@@ -45,7 +45,7 @@ BrainRoot giải quyết vấn đề "học vẹt" và sự phụ thuộc quá m
 
 ### **Backend**
 - **Framework:** FastAPI (Python)
-- **AI Engine:** Google GenAI SDK (Gemini 1.5 Flash / Pro)
+- **AI Engine:** Google GenAI SDK (Gemini 3.1 Flash lite)
 - **Database:** Supabase / PostgreSQL
 - **Logic:** Pydantic (Data Validation), Tenacity (Retry Logic)
 
@@ -94,7 +94,7 @@ npm run dev
 
 ## 🏆 Đội ngũ phát triển (The Team)
 - Dự án được thực hiện bởi team **HCMUT Snake** tại cuộc thi KMS Hackathon.
-- **Tên dự án gốc:** AntiRot (đã đổi tên thương hiệu thành **BrainRoot**).
+- **Tên dự án gốc:** **BrainRoot**.
 
 ---
 *© 2024 BrainRoot LMS — HCMUT Computer Science Project.*
